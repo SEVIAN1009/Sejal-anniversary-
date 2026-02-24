@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Happy 6 Months Sejal ❤️</title>
+    <style>
+        body {
+            margin: 0;
+            font-family: 'Segoe UI', sans-serif;
+            text-align: center;
+            background: linear-gradient(to bottom right, #ff758c, #ff7eb3);
+            color: white;
+        }
+
+        h1 {
+            margin-top: 60px;
+            font-size: 42px;
+        }
+
+        .message {
+            width: 85%;
+            margin: auto;
+            font-size: 20px;
+            line-height: 1.6;
+        }
+
+        .gallery {
+            margin-top: 40px;
+        }
+
+        .gallery img {
+            width: 280px;
+            margin: 15px;
+            border-radius: 20px;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.4);
+            transition: 0.4s;
+        }
+
+        .gallery img:hover {
+            transform: scale(1.05);
+        }
+
+        button {
+            margin-top: 50px;
+            padding: 15px 35px;
+            font-size: 18px;
+            background-color: white;
+            color: #ff4d6d;
+            border: none;
+            border-radius: 40px;
+            cursor: pointer;
+            font-weight: bold;
+        }
+
+        button:hover {
+            background-color: #ffe6ec;
+        }
+
+        .hearts {
+            position: fixed;
+            bottom: -10px;
+            font-size: 20px;
+            animation: float 5s linear infinite;
+        }
+
+        @keyframes float {
+            from { transform: translateY(0); }
+            to { transform: translateY(-100vh); }
+        }
+    </style>
+</head>
+<body>
+
+    <h1>Happy 6 Months Anniversary Sejal ❤️</h1>
+
+    <div class="message">
+        Dear Sejal,<br><br>
+        These 6 months with you have been the most beautiful part of my life.
+        Every moment with you feels special.
+        Your smile makes my day better,
+        and your presence makes my life brighter. 💖<br><br>
+        I promise to cherish you, respect you, and stay by your side always.<br><br>
+        Forever yours,<br>
+        Kevin ❤️
+    </div>
+
+    <div class="gallery">
+        <img src="sejal1.jpg">
+        <img src="sejal2.jpg">
+    </div>
+
+    <button onclick="showMessage()">Click For Surprise 💕</button>
+
+    <script>
+        function showMessage() {
+            alert("Sejal, thank you for choosing me. I love you more every single day. Happy 6 Months ❤️ – Kevin");
+        }
+
+        // Floating hearts effect
+        setInterval(() => {
+            const heart = document.createElement("div");
+            heart.classList.add("hearts");
+            heart.innerHTML = "❤️";
+            heart.style.left = Math.random() * 100 + "vw";
+            heart.style.animationDuration = (3 + Math.random() * 2) + "s";
+            document.body.appendChild(heart);
+
+            setTimeout(() => {
+                heart.remove();
+            }, 5000);
+        }, 300);
+    </script>
+
+</body>
+</html>
